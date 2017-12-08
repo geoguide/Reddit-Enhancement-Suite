@@ -147,3 +147,46 @@ blockquote.twitter-tweet {
 	display: flex;
 	align-items: center;
 }
+
+/* To be moved to _mobile.scss or _smallWindow.scss */
+@media (max-width: 767px) {
+	.res .side,
+	.res .listing-chooser,
+	.res .sidecontentbox,
+	.res .goldvertisement,
+	.res .sidebox.create,
+	.res .trending-subreddits  {
+		display:none;
+	}
+	.res .res-filterline .res-filterline-filters .res-filterline-filter,
+	.res .res-filterline .res-filterline-preamble {
+		display: inline-block;
+		height: 15px;
+		padding: 5px;
+		border-radius: 5px;
+	}
+	.res .res-filterline .res-filterline-filters .res-filterline-filter.res-filterline-filter-active {
+		background-color: white;
+		color: black;
+	}
+	.res #search input[type=text] {
+		width: 100%;
+	}
+	.res .content {
+		margin: 0 auto;
+	}
+	.res .side {
+		display:block;
+		width: 80%;
+		float:none;
+		margin: 0 auto;
+		.spacer {
+			margin-left: 10px;
+			margin-right: 10px;
+		}
+	}
+	.res body.with-listing-chooser>.content,
+	.res body.with-listing-chooser .footer-parent {
+		margin-left: 0;
+	}
+}
