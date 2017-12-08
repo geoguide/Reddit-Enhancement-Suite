@@ -2,7 +2,7 @@
 
 import _ from 'lodash';
 
-const localesContext = require.context('./locales', false, /\.json$/);
+const localesContext = (require: any).context('./locales', false, /\.json$/);
 const validLocaleKeys = localesContext.keys();
 
 const DEFAULT_TRANSIFEX_LOCALE = 'en';
@@ -45,7 +45,7 @@ const getLocale = _.memoize(localeName => {
 	}
 });
 
-export const getLocaleDictionary = _.memoize((localeName: string): { [key: string]: string } => {
+export const getLocaleDictionary = _.memoize((localeName: string): { [string]: string } => {
 	const transifexLocale = redditLocaleToTransifexLocale(localeName);
 
 	const mergedLocales = {

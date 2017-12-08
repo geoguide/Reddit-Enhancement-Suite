@@ -2,7 +2,7 @@
 
 Thinking about contributing to RES? Awesome! We just ask that you follow a few simple guidelines:
 
-1. RES has grown quite large, so we have carefully choose what features we should add to avoid maintenance burden and code bloat. If you're unsure if your feature would appeal to a wide audience, please post about it on [/r/Enhancement](https://www.reddit.com/r/Enhancement/).
+1. RES has grown quite large, so we have carefully chosen what features we should add to avoid maintenance burden and code bloat. If you're unsure if your feature would appeal to a wide audience, please post about it on [/r/Enhancement](https://www.reddit.com/r/Enhancement/).
 
 1. There are a few features we have made a conscious choice not to add to RES, so make sure whatever you'd like to contribute [isn't on that list](https://www.reddit.com/r/Enhancement/wiki/rejectedfeaturerequests).
 
@@ -57,9 +57,9 @@ The default host and port (`localhost` and `4444`) should work for most local in
 
 ##### Chrome
 
-1. Go to `Menu->Tools->Extensions` and tick the `Developer Mode` checkbox.
+1. Go to `Menu->More tools->Extensions` and tick the `Developer Mode` checkbox.
 1. Click `Load unpacked extension` and select the `/dist/chrome` folder (not the `/chrome` folder).
-1. Any time you make changes, you must go back to the `Menu->Tools->Extensions` page and `Reload` the extension.
+1. Any time you make changes, you must go back to the `Menu->More tools->Extensions` page and `Reload` the extension.
 
 ##### Microsoft Edge
 
